@@ -1,0 +1,139 @@
+🚀 STEP-BY-STEP: Create Files & Push to GitHub
+🟢 STEP 1: Create a project folder (LOCAL)
+
+Open Git Bash.
+
+mkdir my-github-practice
+cd my-github-practice
+
+
+✔ This folder will contain your files.
+
+Check:
+
+pwd
+
+🟢 STEP 2: Initialize Git in that folder
+git init
+
+
+✔ Output should be:
+
+Initialized empty Git repository
+
+
+🧠 Now Git is watching this folder.
+
+🟢 STEP 3: Create your own files
+
+Create a file:
+
+touch hello.txt
+
+
+Open hello.txt (Notepad) and write:
+
+Hello GitHub
+This is my first push
+
+
+Save it.
+
+🟢 STEP 4: Check Git status
+git status
+
+
+You should see:
+
+Untracked files:
+  hello.txt
+
+🟢 STEP 5: Add files to Git (STAGE)
+git add hello.txt
+
+
+(or all files)
+
+git add .
+
+
+Check:
+
+git status
+
+
+✔ Should show file in staged area.
+
+🟢 STEP 6: Commit your changes (SAVE POINT)
+git commit -m "Added hello file"
+
+
+✔ Output:
+
+1 file changed
+
+
+🧠 Commit = “this version is correct”
+
+🟢 STEP 7: Create a GitHub repository (ONLINE)
+
+Open 👉 https://github.com
+
+Click New Repository
+
+Repository name:
+
+my-github-practice
+
+
+❌ Do NOT add README
+
+Click Create repository
+
+⚠️ Leave the page open (important).
+
+🟢 STEP 8: Connect LOCAL repo to GitHub
+
+GitHub will show commands.
+Copy only these two lines (example):
+
+git remote add origin https://github.com/your-username/my-github-practice.git
+git branch -M main
+
+
+👉 Paste them into Git Bash and press Enter.
+
+🟢 STEP 9: Push your code to GitHub 🎉
+git push -u origin main
+
+
+Enter:
+
+GitHub username
+
+GitHub password (or token)
+
+✔ If successful, no error.
+
+🟢 STEP 10: VERIFY 🎯
+
+Refresh your GitHub repository page.
+
+You should see:
+
+hello.txt
+
+Your content inside the file
+
+🎉 CONGRATULATIONS! FIRST PUSH DONE 🎉
+
+🧠 REMEMBER THIS FLOW (VERY IMPORTANT)
+Create files
+↓
+git add
+↓
+git commit
+↓
+git push
+
+
