@@ -137,3 +137,81 @@ git commit
 git push
 
 
+------------------**********************************---------------------------------------
+Git Commands for Renaming Files & Updating GitHub
+1️⃣ Rename a file locally
+mv oldfilename.txt newfilename.txt
+
+
+mv = move/rename
+
+Example:
+
+mv hello.txt greeting.txt
+
+
+✅ This renames the file in your local folder.
+
+2️⃣ Check Git status
+git status
+
+
+Shows something like:
+
+renamed: hello.txt -> greeting.txt
+
+
+Confirms Git tracked the rename
+
+3️⃣ Stage the change
+git add .
+
+
+Adds the renamed file to staging area
+
+Prepares it for commit
+
+4️⃣ Commit the change
+git commit -m "Renamed hello.txt to greeting.txt"
+
+
+Saves a new version of your project
+
+Commit message explains what changed
+
+5️⃣ Push the change to GitHub
+git push
+
+
+Updates GitHub repository with renamed file
+
+GitHub shows new file name
+
+History still tracks the old name
+
+6️⃣ Check commit history (optional)
+git log --name-status
+
+
+Shows R oldfilename.txt newfilename.txt
+
+R = Rename
+
+Lets you see old → new file name
+
+7️⃣ Check content changes (optional)
+git diff HEAD~1 HEAD
+
+
+
+
+✅ Quick Summary
+Task	                   Command
+Rename locally	    ------ mv old.txt new.txt
+Stage the change    ------git add .
+                     ------Commit git commit -m "Renamed file"
+Push to GitHub	       -----git push
+Check rename history   ------ git log --name-status
+See content changes	-------git diff HEAD~1 HEAD
+
+
